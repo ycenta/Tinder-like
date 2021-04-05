@@ -1,0 +1,116 @@
+body{
+	background-color:#f5f5fa;
+	color:white;
+}
+.MainTitle{
+text-align: center;
+ font-family: verdana;
+ font-size: 2vw;
+ color:grey;
+}
+
+.Username{
+	position: relative;
+	font-family: verdana;
+ 	font-size: 2vw;
+ 	text-shadow: 2px 2px 4px #000000;
+
+ 	top: 80%;
+ 	left:5%;
+ }
+
+ .Userbio{
+	position: relative;
+	font-family: verdana;
+ 	font-size: 1vw;
+ 	overflow: hidden;
+ 	text-shadow: 2px 2px 4px #000000;
+
+ 	height: 5vh;
+ 	width: 15vw;
+
+ 	top: 82%;
+ 	left:10%;
+
+ }
+
+#Card{
+	background-color: #cdced1;
+	border-radius: 0.5vw;
+	box-shadow:0 1px 6px 3px #888888;
+
+	width: 20vw;
+	height: 63vH;
+	margin-top: 10vH;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.ButtonsCard{
+	 /* background-color: red */
+    display: flex; /* or inline-flex */
+    flex-direction: row ;
+    justify-content: center;
+	
+
+	width: 20vw;
+	height: 8vH;
+	margin-top: 1vH;
+	margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5vw;
+}
+
+.ButtonsCard div{
+	margin: 2%;
+	 flex-grow: 1;
+
+	 height: 11vH;
+	 width: 11vw;
+	 text-align: center;
+	background-size: contain;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:blue;
+	user-select: none; 
+	background-color: red;
+	border-radius: 50%;
+	box-shadow:0 1px 6px 2px #888888;
+}
+
+.ButtonsCard div:hover{
+	transform: scale(1.10, 1.10);
+	opacity: 0.33;
+}
+
+.ButtonsCard div:active {
+	opacity: 1;
+
+	transform: translateY(4px);
+	filter: invert(1);
+	filter: hue-rotate(200deg);
+}
+
+.ImgCard{ 
+	background-size: cover;
+
+	border-radius: 0.5vw;
+	width: 100%;
+	height:100%;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+.CardLeftTransi{
+	transition: 1.5s;
+	transform : translateX(-300%) rotate(-20deg) !important;
+	opacity: 0;
+}
+
+.CardRightTransi{
+	transition: 1.5s;
+	transform : translateX(+300%) rotate(20deg) !important;
+	opacity: 0;
+}
